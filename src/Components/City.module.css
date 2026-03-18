@@ -1,0 +1,56 @@
+.city {
+  padding: 2.4rem 2.8rem;
+  max-height: 70%;
+  background: var(--surface-glass);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 1px solid var(--surface-border);
+  box-shadow: var(--shadow-soft);
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.city h6 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--color-light--1);
+  letter-spacing: 0.1em;
+}
+
+.city h3 {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.city h3 span {
+  font-size: 3.2rem;
+  line-height: 1;
+}
+
+.city p {
+  font-size: 1.5rem;
+}
+
+.city a:link,
+.city a:visited {
+  font-size: 1.5rem;
+  color: var(--color-brand--1);
+}
+
+.emoji {
+  width: 3rem;
+  height: 2rem;
+  object-fit: cover;
+  border-radius: 4px;
+}

@@ -1,0 +1,50 @@
+.form {
+  background: var(--surface-glass);
+  border-radius: var(--radius-md);
+  padding: 2.4rem 2.8rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border: 1px solid var(--surface-border);
+  box-shadow: var(--shadow-soft);
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  position: relative;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+
+.flag {
+  position: absolute;
+  right: 1rem;
+  top: 3.8rem;
+  width: 3rem;
+  height: 2rem;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.form.loading {
+  opacity: 0.5;
+}
+
+.form.loading button {
+  pointer-events: none;
+  background-color: var(--color-light--1);
+  border: 1px solid var(--color-light--1);
+  color: var(--color-dark--0);
+}
+
+:global(.react-datepicker) {
+  font-family: inherit;
+  font-size: 1.2rem;
+}

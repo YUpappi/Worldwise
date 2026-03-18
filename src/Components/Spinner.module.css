@@ -1,0 +1,184 @@
+.spinnerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Blinking Skeleton Loader */
+.skeleton {
+  background: var(--color-light--4);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  opacity: 0.6;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+/* Skeleton Variants */
+.skeletonHeader {
+  composes: skeleton;
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+.skeletonImage {
+  composes: skeleton;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.skeletonText {
+  composes: skeleton;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.skeletonTextShort {
+  composes: skeletonText;
+  width: 60%;
+}
+
+.skeletonTextMedium {
+  composes: skeletonText;
+  width: 80%;
+}
+
+.skeletonTextFull {
+  composes: skeletonText;
+  width: 100%;
+}
+
+/* .spinnerContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes shimmer {
+  to {
+    transform: rotate(1turn);
+  }
+}
+.spinner {
+  background: #e0e0e0;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+.spinner::after {
+  animation: shimmer 1.5s infinite;
+  background: linear-gradient(90deg, tranparent, rgba(255, 255, 255, 0.5));
+} */
+
+/* .spinner {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: conic-gradient(#0000 10%, var(--color-light--2));
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: rotate 1.5s infinite linear;
+} */
+
+/* .spinnerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.skeleton {
+  background: var(--color-light--2);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+  animation: shimmer 1.5s infinite;
+  transform: translateX(-100%);
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.skeletonHeader {
+  composes: skeleton;
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+.skeletonImage {
+  composes: skeleton;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.skeletonText {
+  composes: skeleton;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.skeletonTextShort {
+  composes: skeletonText;
+  width: 60%;
+}
+
+.skeletonTextMedium {
+  composes: skeletonText;
+  width: 80%;
+}
+
+.skeletonTextFull {
+  composes: skeletonText;
+  width: 100%;
+} */

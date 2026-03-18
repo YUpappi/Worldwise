@@ -1,0 +1,127 @@
+/* Taken from getting started guide at: https://leafletjs.com/examples/quick-start/ */
+@import "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap";
+
+:root {
+  --font-sans: "Space Grotesk", system-ui, -apple-system, Segoe UI, sans-serif;
+  --font-display: "Fraunces", "Space Grotesk", serif;
+
+  --color-brand--1: #ff9f1c;
+  --color-brand--2: #2ec4b6;
+
+  --color-dark--0: #0b1114;
+  --color-dark--1: #121a1f;
+  --color-dark--2: #192228;
+  --color-light--1: #b7c3c9;
+  --color-light--2: #e7eef2;
+  --color-light--3: #f3f7f9;
+  --color-light--4: rgba(255, 255, 255, 0.06);
+
+  --surface-glass: rgba(18, 26, 31, 0.8);
+  --surface-border: rgba(255, 255, 255, 0.08);
+  --shadow-strong: 0 20px 60px rgba(6, 11, 14, 0.55);
+  --shadow-soft: 0 12px 24px rgba(6, 11, 14, 0.35);
+
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-light--2);
+  font-weight: 400;
+  line-height: 1.6;
+  min-height: 100vh;
+  background: radial-gradient(
+      900px 500px at 8% -10%,
+      rgba(46, 196, 182, 0.18),
+      transparent 60%
+    ),
+    radial-gradient(
+      800px 500px at 92% 12%,
+      rgba(255, 159, 28, 0.18),
+      transparent 55%
+    ),
+    #0b1114;
+  background-attachment: fixed;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--color-light--1);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-sm);
+  background-color: rgba(255, 255, 255, 0.06);
+  color: var(--color-light--2);
+  transition: all 0.2s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(231, 238, 242, 0.6);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: rgba(46, 196, 182, 0.6);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 3px rgba(46, 196, 182, 0.15);
+}
+
+.cta:link,
+.cta:visited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: linear-gradient(135deg, #2ec4b6, #6ee7d2);
+  color: #0b1114;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1.1rem 3.2rem;
+  border-radius: 999px;
+  letter-spacing: 0.08em;
+  box-shadow: 0 10px 30px rgba(46, 196, 182, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta:hover,
+.cta:active {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 36px rgba(46, 196, 182, 0.45);
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+

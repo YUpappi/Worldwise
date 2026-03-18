@@ -1,0 +1,11 @@
+.message {
+  text-align: center;
+  font-size: 1.6rem;
+  width: 100%;
+  margin: 2rem auto;
+  font-weight: 600;
+  padding: 1rem 1.4rem;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--surface-border);
+}

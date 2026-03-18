@@ -1,0 +1,72 @@
+.mapContainer {
+  flex: 1 1 0;
+  width: 100%;
+  height: 100%;
+  min-height: 40rem;
+  background: var(--surface-glass);
+  position: relative;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--surface-border);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  min-height: 40rem;
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: none;
+}
+
+.mapControls {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 2.4rem;
+  display: flex;
+  justify-content: center;
+  z-index: 1200;
+  pointer-events: none;
+}
+
+.mapControls :global(button),
+.mapControls :global(a) {
+  pointer-events: auto;
+}
+:global(.leaflet-popup .leaflet-popup-content-wrapper) {
+  background-color: var(--color-dark--1);
+  color: var(--color-light--2);
+  border-radius: var(--radius-sm);
+  padding-right: 0.6rem;
+  border: 1px solid var(--surface-border);
+}
+
+:global(.leaflet-popup .leaflet-popup-content) {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+:global(.leaflet-popup .leaflet-popup-tip) {
+  background-color: var(--color-dark--1);
+}
+
+:global(.leaflet-popup-content-wrapper) {
+  border-left: 5px solid var(--color-brand--2);
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    display: block;
+    position: absolute;
+    bottom: 1.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1200;
+  }
+}

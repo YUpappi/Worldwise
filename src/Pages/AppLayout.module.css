@@ -1,0 +1,15 @@
+.app {
+  height: 100vh;
+  min-height: 100vh;
+  padding: 2.4rem;
+  overscroll-behavior-y: none;
+  display: flex;
+  gap: 2.4rem;
+  position: relative;
+}
+
+@media screen and (max-width: 900px) {
+  .app {
+    flex-direction: column;
+  }
+}

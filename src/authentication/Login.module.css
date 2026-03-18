@@ -1,0 +1,39 @@
+.login {
+  margin: 2rem;
+  padding: 3rem 4rem;
+  background: linear-gradient(135deg, rgba(12, 17, 20, 0.92), rgba(12, 17, 20, 0.75));
+  min-height: calc(100vh - 4rem);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--surface-border);
+  box-shadow: var(--shadow-strong);
+}
+
+.form {
+  background: var(--surface-glass);
+  border-radius: var(--radius-md);
+  padding: 2.6rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: min(48rem, 100%);
+  margin: 8rem auto;
+  border: 1px solid var(--surface-border);
+  box-shadow: var(--shadow-soft);
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+@media (max-width: 768px) {
+  .login {
+    margin: 1.2rem;
+    padding: 2.4rem;
+  }
+
+  .form {
+    margin: 5rem auto;
+  }
+}
