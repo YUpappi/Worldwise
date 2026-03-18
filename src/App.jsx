@@ -18,12 +18,12 @@ import SpinnerSkeleton from "./Components/SpinnerSkeleton";
 import SignUpForm from "./authentication/SignUpForm";
 import { Toaster } from "react-hot-toast";
 
-const Homepage = lazy(() => import("./pages/Homepage"));
-const Product = lazy(() => import("./pages/Product"));
-const Pricing = lazy(() => import("./pages/Pricing"));
-const Error = lazy(() => import("./pages/Error"));
+const Homepage = lazy(() => import("./Pages/Homepage"));
+const Product = lazy(() => import("./Pages/Product"));
+const Pricing = lazy(() => import("./Pages/Pricing"));
+const Error = lazy(() => import("./Pages/Error"));
 const Login = lazy(() => import("./authentication/Login"));
-const AppLayout = lazy(() => import("./pages/AppLayout"));
+const AppLayout = lazy(() => import("./Pages/AppLayout"));
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -108,3 +108,4 @@ function App() {
 }
 
 export default App;
+
